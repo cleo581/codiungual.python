@@ -1,0 +1,9 @@
+print("mark sheet genarator")
+print("enter your marks in 3 sunjects")
+math=int(input("math"))
+english=int(input("english"))
+science=int(input("science"))
+sum=math+english+science
+per=sum/300*100
+print("total=",sum)
+print("percentage",per)
