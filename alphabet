@@ -1,0 +1,7 @@
+a="number"
+b="letter"
+if a == "number":
+    print("not letter")
+else:
+    print("letter")
+
