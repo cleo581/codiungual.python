@@ -1,0 +1,7 @@
+#get input from the user
+char=input("enter a single character")
+#vailidate:check if a character
+if type(char) is str and len(char)==1:
+    #get the ascii value using ord() function
+    ascii_value=ord(char)
+    print(f"the ascii value of '{char}' is {ascii_value}")
