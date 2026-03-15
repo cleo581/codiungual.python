@@ -1,0 +1,11 @@
+tuplex=("tuple",False,True,2.5,2)
+print(tuplex)
+tuppley=(8,10,2,3,4)
+print(tuppley)
+tuplez=tuplex+tuppley
+print(tuplez)
+print(len(tuplez))
+print(tuppley[1])
+#tuppley[2]="15"
+print(tuppley)
+print(tuppley[2:4])
