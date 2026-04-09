@@ -19,7 +19,10 @@ class dog:
     print(dog2)
     bark2=("woof")
     print(bark2)
-
+ 
+dog1="golden retriever"
+print(dog1)
+tiger=("golden retriever")
 #a dog class example to understand object oriented programing
 class goldenretriver:
     pass
