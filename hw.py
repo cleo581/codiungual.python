@@ -1,4 +1,5 @@
 import math
+from turtle import circle
 
 class Circle:
     def __init__(self, radius=1):
@@ -9,7 +10,8 @@ class Circle:
     def perimeter(self):
         return 2 * math.pi * self.radius**2
 
-circle=Circle (5)
+input_radius = float(input("enter the radius of circle:"))
+circle = Circle(input_radius)
 print("area of Circle is ",circle.area())
 print("the perimeter of Circle is ",circle.perimeter())
 
