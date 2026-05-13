@@ -18,7 +18,7 @@ class Sprite(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.velocity = [random.choice([-1,1]),random.choice([-1,1])]
     def update(self):
-        self.rect.move_ip(self,self.velocity)
+        self.rect.move_ip(self.velocity)
         boundry_hit = False
         if self.rect.left < 0 or self.rect.right > 500:
             self.velocity[0] = -self.velocity[0]
@@ -39,12 +39,12 @@ sp1 = Sprite(orange,50,50)
 sp1.rect.x =random.randint(0,480)
 sp1.rect.y =random.randint(0,380)
 allspritelist.add(sp1)
-screen = pygame.display.set_mode(400,500)
+screen = pygame.display.set_mode((400,500))
 pygame.display.set_caption("bounce")
 bg_colour = white
 screen.fill(bg_colour)
 exit = False
-clock = pygame.time.clock()
+clock = pygame.time.Clock()
 while not exit:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
